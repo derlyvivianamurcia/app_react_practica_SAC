@@ -2,22 +2,17 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import 'bootstrap/dist/css/bootstrap.css'
 import './components/styles/Global.css';
-import Insignia from './components/Insignia.jsx'
+import InsigniaNueva from './pages/InsigniaNueva.jsx'
 
 //import App from './App';
-
+const container = document.getElementById('root')
 
 ReactDOM.render(
-  <>
-    <Insignia firstName = 'David' 
-    lastName = 'Diosa' 
-    ocupacion = 'Estudiante'
-    usuarioGit = 'daviddiosa'
-    URLAvatar = 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRvKnwzH2nIai9eZsZvHmco7fDEutQILHWp1w&usqp=CAU'/>
-  </>,
-  
-  document.getElementById('root')
-);
+  <React.StrictMode>
+   <InsigniaNueva/>
+  </React.StrictMode>,
+  container
+  );
 //CODIGO JSX
 
 /* const jsx = <h1>hola, estudiantes de la media</h1>
