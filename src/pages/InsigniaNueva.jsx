@@ -27,7 +27,6 @@ class InsigniaNueva extends React.Component{
     render(){
         return(
             <div>
-                <Navbar/>
                 <div className='header'>
                     <img className='img-fluid' src={LogoHeader} alt='Logo'/>
                 </div>
